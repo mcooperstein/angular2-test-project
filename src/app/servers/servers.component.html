@@ -1,0 +1,10 @@
+<div id="serverComponentDiv">
+    <p style="color:red;">
+        (We're from the servers component!)
+    </p>
+    <!--<input type="text" [(ngModel)]="username">-->
+    <input type="text" (input)="onUpdateUsername($event)">
+    <button class="btn btn-primary" [disabled]="buttonDisabled" (click)="onClearInput()">Click Me!</button>
+    <p>{{username}}</p>
+    <p>The button is disabled, True or False?: {{buttonDisabled}}</p>
+</div>

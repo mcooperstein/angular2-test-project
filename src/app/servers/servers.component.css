@@ -1,0 +1,13 @@
+p {
+    margin-top: 10px;
+}
+
+#serverComponentDiv {
+    background-color: yellow;
+    padding: 20px 10px;
+}
+
+button {
+    display: inline;
+    margin: 20px 0px;
+}
