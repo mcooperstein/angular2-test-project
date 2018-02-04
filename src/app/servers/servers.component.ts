@@ -27,5 +27,13 @@ export class ServersComponent implements OnInit {
     this.buttonDisabled = false;
   }
   }
+  onEnableButton(event: any){
+    this.username = event.target.value;
+    if(this.username==""){
+        this.buttonDisabled = true;
+    }else {
+        this.buttonDisabled = false;
+    }
+  }
 
 }
